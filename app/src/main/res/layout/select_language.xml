@@ -2,10 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view = "http://schemas.android.com/apk/res-auto"
     android:layout_width = "match_parent"
-    card_view:cardCornerRadius = "6dp"
+    card_view:cardCornerRadius = "8dp"
     android:id="@+id/cardview"
     android:layout_margin = "10dp"
-    android:layout_height = "50dp">
+    android:layout_height = "55dp">
 
     <LinearLayout
         android:id = "@+id/parent"
@@ -13,24 +13,29 @@
         android:layout_width = "match_parent"
         android:orientation = "vertical"
         android:gravity = "center"
+        android:layout_marginTop="5dp"
         android:layout_height="match_parent">
         <TextView
             android:id = "@+id/name1"
             android:layout_width = "wrap_content"
             android:gravity = "center"
             android:textSize = "16sp"
-            android:textColor = "@android:color/black"
+            android:textStyle="bold"
+            android:textColor = "@color/colorBlack"
             android:layout_height = "wrap_content" />
         <TextView
             android:id = "@+id/name2"
             android:layout_width = "wrap_content"
             android:gravity = "center"
             android:textSize = "12sp"
-            android:textColor = "@android:color/black"
+            android:layout_marginTop="3dp"
             android:layout_height = "wrap_content" />
         <View
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/newui"/>
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/vColorBottom"
+            android:background="@color/colorPrimary"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
